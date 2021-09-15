@@ -1,115 +1,109 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
+import React, {useEffect} from "react";
+import { Dimensions, StyleSheet, SafeAreaView, View, ActivityIndicator } from "react-native";
+import { Slider } from "./src/components/Slider";
+import { DragSortableView } from "react-native-drag-sort";
+import { SliderType } from "./src/types/types";
+import { sliderData } from "./src/types/data";
+import { colors } from "./src/styles/colors";
+// import {
+//   useFonts,
+//   Karla_400Regular,
+//   Karla_600SemiBold,
+// } from "@expo-google-fonts/karla";
 
-import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import Zeroconf from "react-native-zeroconf";
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+const zeroconf = new Zeroconf();
 
-const Section: React.FC<{
-  title: string;
-}> = ({children, title}) => {
-  const isDarkMode = useColorScheme() === 'dark';
+const deviceWidth = Dimensions.get("window").width;
+const deviceHeight = Dimensions.get("window").height;
+const childrenWidth = deviceWidth / 12;
+
+export default function App() {
+  // let [fontsLoaded] = useFonts({
+  //   Karla_400Regular,
+  //   Karla_600SemiBold,
+  // });
+
+  // if (!fontsLoaded) {
+  //   return <ActivityIndicator />;
+  // }
+
+  useEffect(() => {
+    zeroconf.scan('http', 'tcp', 'local.')
+    setTimeout(() => {
+      zeroconf.stop()
+    }, 50000)
+    
+    addListeners();
+  }, []);
+
+  const addListeners = () => {
+    zeroconf.on('start', () => {
+      console.log('Zero Conf Scan [Start]')
+    })
+
+    zeroconf.on('stop', () => {
+      console.log('Zero Conf Scan [Stop]')
+    })
+
+    zeroconf.on('resolved', service => {
+      console.log('[Resolve]', JSON.stringify(service, null, 2))
+    })
+
+    zeroconf.on('error', err => {
+      console.log('[Error]', err)
+    })
+  }
+
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+    <SafeAreaView style={styles.container}>
+      <DragSortableView
+        dataSource={sliderData}
+        parentWidth={deviceWidth - 50}
+        childrenWidth={childrenWidth}
+        childrenHeight={deviceHeight - 20}
+        // fixedItems={fixedItems}
+        marginChildrenBottom={10}
+        marginChildrenRight={10}
+        marginChildrenLeft={10}
+        marginChildrenTop={10}
+        onDataChange={(data) => {
+          console.log("change ", data);
+        }}
+        keyExtractor={(item: SliderType, index) => item.appName}
+        renderItem={(item: SliderType, index) => {
+          return renderItem(item, index);
+        }}
+      />
+    </SafeAreaView>
+  );
+}
+
+const renderItem = (item: SliderType, index: any) => {
+  return (
+    <View
+      style={{
+        height: deviceHeight - 20,
+        justifyContent: "center",
+      }}
+    >
+      <Slider
+        appName={item.appName}
+        appVolume={item.appVolume}
+        appIcon={item.appIcon}
+      />
     </View>
   );
 };
 
-const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
-
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  container: {
+    flex: 1,
+    paddingLeft: 50,
+    // flexDirection: "row",
+    backgroundColor: colors.black,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
-
-export default App;
