@@ -12,7 +12,7 @@ export const Slider = (props: SliderType) => {
     <View>
       <View style={styles.sliderName}>
         {props.appName && (
-          <Text style={{ color: "#fff", fontFamily: "Karla_400Regular" }}>
+          <Text style={{ color: "#fff", fontFamily: "Karla-Regular", fontWeight: '400' }}>
             {props.appName}
           </Text>
         )}

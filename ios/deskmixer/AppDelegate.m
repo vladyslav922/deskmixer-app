@@ -41,6 +41,14 @@ static void InitializeFlipper(UIApplication *application) {
   } else {
       rootView.backgroundColor = [UIColor whiteColor];
   }
+  
+  for(NSString *fontfamilyname in [UIFont familyNames]) {
+    NSLog(@"family: '%@'", fontfamilyname);
+    for (NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname]) {
+      NSLog(@"\tfont: '%@'", fontName);
+    }
+    NSLog(@"-------------");
+  }
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];

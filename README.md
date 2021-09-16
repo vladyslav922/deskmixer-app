@@ -3,7 +3,7 @@
 
 > If you met above issue during build of android, go to
   node_modules/react-native-zeroconf/android/build.gradle
-  and change line 46 from 'rx2dnssd', version: '0.9.11' -> '0.9.13'
+  and change line 46 from 'rx2dnssd', version: '0.9.13' -> '0.9.15'
 
 ### Basic testing
   1. Server running: [node server.ts]

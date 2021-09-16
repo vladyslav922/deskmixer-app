@@ -14,6 +14,20 @@
 		6172F2D35A4C3AA820D92908 /* libPods-deskmixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-deskmixer.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-deskmixer-deskmixerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-deskmixer-deskmixerTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		EF281EFD26F2C39500BF8140 /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9726F2BFA100BF8140 /* Karla-Bold.ttf */; };
+		EF281EFE26F2C39500BF8140 /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9A26F2BFA200BF8140 /* Karla-BoldItalic.ttf */; };
+		EF281EFF26F2C39500BF8140 /* Karla-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9926F2BFA200BF8140 /* Karla-ExtraBold.ttf */; };
+		EF281F0026F2C39500BF8140 /* Karla-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9226F2BF9F00BF8140 /* Karla-ExtraBoldItalic.ttf */; };
+		EF281F0126F2C39500BF8140 /* Karla-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9D26F2BFA300BF8140 /* Karla-ExtraLight.ttf */; };
+		EF281F0226F2C39500BF8140 /* Karla-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9526F2BFA000BF8140 /* Karla-ExtraLightItalic.ttf */; };
+		EF281F0326F2C39500BF8140 /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9C26F2BFA300BF8140 /* Karla-Italic.ttf */; };
+		EF281F0426F2C39500BF8140 /* Karla-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9326F2BF9F00BF8140 /* Karla-Light.ttf */; };
+		EF281F0526F2C39500BF8140 /* Karla-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9626F2BFA100BF8140 /* Karla-LightItalic.ttf */; };
+		EF281F0626F2C39500BF8140 /* Karla-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9826F2BFA200BF8140 /* Karla-Medium.ttf */; };
+		EF281F0726F2C39500BF8140 /* Karla-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9426F2BFA000BF8140 /* Karla-MediumItalic.ttf */; };
+		EF281F0826F2C39500BF8140 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9126F2BF9F00BF8140 /* Karla-Regular.ttf */; };
+		EF281F0926F2C39500BF8140 /* Karla-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9E26F2BFA300BF8140 /* Karla-SemiBold.ttf */; };
+		EF281F0A26F2C39500BF8140 /* Karla-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF281E9B26F2BFA200BF8140 /* Karla-SemiBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,34 @@
 		C0A881CF5CF3F2B244570E2A /* Pods-deskmixer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deskmixer.debug.xcconfig"; path = "Target Support Files/Pods-deskmixer/Pods-deskmixer.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-deskmixer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deskmixer.release.xcconfig"; path = "Target Support Files/Pods-deskmixer/Pods-deskmixer.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EF281E8326F2BF7500BF8140 /* Karla-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-SemiBoldItalic.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		EF281E8426F2BF7600BF8140 /* Karla-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-ExtraLight.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-ExtraLight.ttf"; sourceTree = "<group>"; };
+		EF281E8526F2BF7600BF8140 /* Karla-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-ExtraBoldItalic.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		EF281E8626F2BF7600BF8140 /* Karla-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-ExtraLightItalic.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		EF281E8726F2BF7600BF8140 /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Bold.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-Bold.ttf"; sourceTree = "<group>"; };
+		EF281E8826F2BF7600BF8140 /* Karla-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Light.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-Light.ttf"; sourceTree = "<group>"; };
+		EF281E8926F2BF7600BF8140 /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-BoldItalic.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EF281E8A26F2BF7600BF8140 /* Karla-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-LightItalic.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-LightItalic.ttf"; sourceTree = "<group>"; };
+		EF281E8B26F2BF7600BF8140 /* Karla-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-SemiBold.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-SemiBold.ttf"; sourceTree = "<group>"; };
+		EF281E8C26F2BF7600BF8140 /* Karla-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Medium.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-Medium.ttf"; sourceTree = "<group>"; };
+		EF281E8D26F2BF7600BF8140 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Regular.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-Regular.ttf"; sourceTree = "<group>"; };
+		EF281E8E26F2BF7700BF8140 /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Italic.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-Italic.ttf"; sourceTree = "<group>"; };
+		EF281E8F26F2BF7700BF8140 /* Karla-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-MediumItalic.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-MediumItalic.ttf"; sourceTree = "<group>"; };
+		EF281E9026F2BF7700BF8140 /* Karla-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-ExtraBold.ttf"; path = "../../../../../../Users/macdev/Downloads/Karla/static/Karla-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EF281E9126F2BF9F00BF8140 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
+		EF281E9226F2BF9F00BF8140 /* Karla-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		EF281E9326F2BF9F00BF8140 /* Karla-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Light.ttf"; sourceTree = "<group>"; };
+		EF281E9426F2BFA000BF8140 /* Karla-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-MediumItalic.ttf"; sourceTree = "<group>"; };
+		EF281E9526F2BFA000BF8140 /* Karla-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		EF281E9626F2BFA100BF8140 /* Karla-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-LightItalic.ttf"; sourceTree = "<group>"; };
+		EF281E9726F2BFA100BF8140 /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
+		EF281E9826F2BFA200BF8140 /* Karla-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Medium.ttf"; sourceTree = "<group>"; };
+		EF281E9926F2BFA200BF8140 /* Karla-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EF281E9A26F2BFA200BF8140 /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EF281E9B26F2BFA200BF8140 /* Karla-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		EF281E9C26F2BFA300BF8140 /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic.ttf"; sourceTree = "<group>"; };
+		EF281E9D26F2BFA300BF8140 /* Karla-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-ExtraLight.ttf"; sourceTree = "<group>"; };
+		EF281E9E26F2BFA300BF8140 /* Karla-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +141,20 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF281E8726F2BF7600BF8140 /* Karla-Bold.ttf */,
+				EF281E8926F2BF7600BF8140 /* Karla-BoldItalic.ttf */,
+				EF281E9026F2BF7700BF8140 /* Karla-ExtraBold.ttf */,
+				EF281E8526F2BF7600BF8140 /* Karla-ExtraBoldItalic.ttf */,
+				EF281E8426F2BF7600BF8140 /* Karla-ExtraLight.ttf */,
+				EF281E8626F2BF7600BF8140 /* Karla-ExtraLightItalic.ttf */,
+				EF281E8E26F2BF7700BF8140 /* Karla-Italic.ttf */,
+				EF281E8826F2BF7600BF8140 /* Karla-Light.ttf */,
+				EF281E8A26F2BF7600BF8140 /* Karla-LightItalic.ttf */,
+				EF281E8C26F2BF7600BF8140 /* Karla-Medium.ttf */,
+				EF281E8F26F2BF7700BF8140 /* Karla-MediumItalic.ttf */,
+				EF281E8D26F2BF7600BF8140 /* Karla-Regular.ttf */,
+				EF281E8B26F2BF7600BF8140 /* Karla-SemiBold.ttf */,
+				EF281E8326F2BF7500BF8140 /* Karla-SemiBoldItalic.ttf */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				6423831EA8574132BED9D8CC /* libPods-deskmixer.a */,
 				ABFE59519B596E51CEFDCCC0 /* libPods-deskmixer-deskmixerTests.a */,
@@ -116,6 +172,20 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				EF281E9726F2BFA100BF8140 /* Karla-Bold.ttf */,
+				EF281E9A26F2BFA200BF8140 /* Karla-BoldItalic.ttf */,
+				EF281E9926F2BFA200BF8140 /* Karla-ExtraBold.ttf */,
+				EF281E9226F2BF9F00BF8140 /* Karla-ExtraBoldItalic.ttf */,
+				EF281E9D26F2BFA300BF8140 /* Karla-ExtraLight.ttf */,
+				EF281E9526F2BFA000BF8140 /* Karla-ExtraLightItalic.ttf */,
+				EF281E9C26F2BFA300BF8140 /* Karla-Italic.ttf */,
+				EF281E9326F2BF9F00BF8140 /* Karla-Light.ttf */,
+				EF281E9626F2BFA100BF8140 /* Karla-LightItalic.ttf */,
+				EF281E9826F2BFA200BF8140 /* Karla-Medium.ttf */,
+				EF281E9426F2BFA000BF8140 /* Karla-MediumItalic.ttf */,
+				EF281E9126F2BF9F00BF8140 /* Karla-Regular.ttf */,
+				EF281E9E26F2BFA300BF8140 /* Karla-SemiBold.ttf */,
+				EF281E9B26F2BFA200BF8140 /* Karla-SemiBoldItalic.ttf */,
 				13B07FAE1A68108700A75B9A /* deskmixer */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* deskmixerTests */,
@@ -145,7 +215,6 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-deskmixer-deskmixerTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-deskmixer-deskmixerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -243,6 +312,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF281EFD26F2C39500BF8140 /* Karla-Bold.ttf in Resources */,
+				EF281EFE26F2C39500BF8140 /* Karla-BoldItalic.ttf in Resources */,
+				EF281EFF26F2C39500BF8140 /* Karla-ExtraBold.ttf in Resources */,
+				EF281F0026F2C39500BF8140 /* Karla-ExtraBoldItalic.ttf in Resources */,
+				EF281F0126F2C39500BF8140 /* Karla-ExtraLight.ttf in Resources */,
+				EF281F0226F2C39500BF8140 /* Karla-ExtraLightItalic.ttf in Resources */,
+				EF281F0326F2C39500BF8140 /* Karla-Italic.ttf in Resources */,
+				EF281F0426F2C39500BF8140 /* Karla-Light.ttf in Resources */,
+				EF281F0526F2C39500BF8140 /* Karla-LightItalic.ttf in Resources */,
+				EF281F0626F2C39500BF8140 /* Karla-Medium.ttf in Resources */,
+				EF281F0726F2C39500BF8140 /* Karla-MediumItalic.ttf in Resources */,
+				EF281F0826F2C39500BF8140 /* Karla-Regular.ttf in Resources */,
+				EF281F0926F2C39500BF8140 /* Karla-SemiBold.ttf in Resources */,
+				EF281F0A26F2C39500BF8140 /* Karla-SemiBoldItalic.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
